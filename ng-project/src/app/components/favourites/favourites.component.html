@@ -1,0 +1,12 @@
+<div class="flex flex-wrap p-20 justify-center">
+  <div
+    *ngFor="let p of favArr"
+    class="w-1/5 rounded shadow-lg bg-white p-4 m-4"
+  >
+    <img [src]="p.thumbnail" alt="Card Image" width="" />
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{{ p.title }}</div>
+      <p>{{ p.price }}</p>
+    </div>
+  </div>
+</div>
